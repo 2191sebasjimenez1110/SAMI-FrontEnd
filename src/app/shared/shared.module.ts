@@ -71,7 +71,9 @@ import { AppointmentCardComponent } from './components/organisms/appointment-car
 import { LoginTemplateComponent } from './components/templates/login-template/login-template.component';
 import { RegisterTemplateComponent } from './components/templates/register-template/register-template.component';
 import { StarterTemplateComponent } from './components/templates/starter-template/starter-template.component';
-
+import { AlertReagendamientoComponent } from './components/atoms/alert-reagendamiento/alert-reagendamiento.component';
+import { AlertConfirmacionCitaComponent } from './components/atoms/alert-confirmacion-cita/alert-confirmacion-cita.component';
+import { AlertCancelarCitaComponent } from './components/atoms/alert-cancelar-cita/alert-cancelar-cita.component';
 
 
 @NgModule({
@@ -144,13 +146,18 @@ import { StarterTemplateComponent } from './components/templates/starter-templat
     LoginTemplateComponent,
     RegisterTemplateComponent,
     StarterTemplateComponent,
+    AlertReagendamientoComponent,
+    AlertConfirmacionCitaComponent,
+    AlertCancelarCitaComponent,
+    
   ],
   imports: [
     CommonModule,
     FormsModule,
     RouterModule
   ],
- exports:[StarterTemplateComponent],
+ exports:[AlertConfirmacionCitaComponent,AlertCancelarCitaComponent,AlertReagendamientoComponent]
+ 
 
   
 })

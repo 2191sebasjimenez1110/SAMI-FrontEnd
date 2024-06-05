@@ -1,0 +1,19 @@
+.custom-popup {
+    background-color: #d4edda !important;
+    color: #155724 !important; 
+    border: 1px solid #c3e6cb !important;
+    font-family: Arial, sans-serif !important;
+    padding: 20px !important;
+  }
+  
+  .custom-title {
+    font-size: 20px !important;
+    font-weight: bold !important;
+    color: #155724 !important;
+  }
+  
+  .custom-icon {
+    color: #28a745 !important;
+    font-size: 24px !important; 
+  }
+  
