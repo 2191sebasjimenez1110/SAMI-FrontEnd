@@ -10,20 +10,22 @@ export class AlertCancelarCitaComponent {
   mostrarAlerta() {
     Swal.fire({
       text: "Estas seguro de cancalar tu cita?",
-      icon: "warning",
       showCancelButton: true,
-      confirmButtonColor: "#3085d6",
-      cancelButtonColor: "#d33",
-      confirmButtonText: "Cancelar",
+      confirmButtonColor: "#16255d",
+      cancelButtonColor: "#A32020",
+      confirmButtonText: "Si",
+      cancelButtonText:"No",
       width:500,
       heightAuto:true,
+      background:"#FDF4DC",
     }).then((result) => {
       if (result.isConfirmed) {
         Swal.fire({
-          text: "Cita cancelada!",
-          icon: "success",
-          timer: 2000,
+          text: "Cita cancelada",
+          timer: 1500,
           timerProgressBar:true,
+          background:"#EAFBE7",
+          showConfirmButton:false,
         });
       }
     });

@@ -10,18 +10,13 @@ export class AlertConfirmacionCitaComponent {
   mostrarAlerta() {
     Swal.fire({
       position: "center",
-      icon: "success",
       text: "Tu cita ha cido agendada con exito",
       showConfirmButton: false,
-      timer: 2000,
-      timerProgressBar:true,
       width:500,
       heightAuto:true,
-      customClass: {
-        popup: 'custom-popup',
-        title: 'custom-title',
-        icon: 'custom-icon'
-      }
+      background:"#EAFBE7",
+      showCloseButton:true,
+      
     });
   }
 }
